@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 7%;
-  background: #0d0f13eF;
+  background: #0d0f13ef;
   border-bottom: 1px solid #252832;
   backdrop-filter: blur(10px);
 }
@@ -55,20 +55,53 @@
   transform: scaleX(1);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .navbar {
-    padding: 17px 20px;
+    padding: 16px 20px;
   }
 
   .logo {
+    flex-shrink: 0;
     font-size: 17px;
   }
 
   .nav-links {
-    gap: 17px;
+    gap: 15px;
   }
 
   .nav-links a {
-    font-size: 12px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px 16px;
+  }
+
+  .nav-links {
+    gap: 11px;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar {
+    padding: 14px 12px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    gap: 9px;
+  }
+
+  .nav-links a {
+    font-size: 9px;
   }
 }

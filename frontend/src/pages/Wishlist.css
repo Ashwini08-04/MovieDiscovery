@@ -169,38 +169,152 @@
   color: #f1f1f1;
 }
 
-/* Responsive */
+/* Tablet/mobile */
 @media (max-width: 700px) {
   .wishlist-page {
     padding: 60px 20px 75px;
   }
 
   .wishlist-header {
-    margin-bottom: 38px;
+    margin-bottom: 36px;
   }
 
   .wishlist-header h1 {
+    margin-top: 10px;
     font-size: 42px;
   }
 
+  .wishlist-header p {
+    font-size: 13px;
+  }
+
   .wishlist-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 34px 16px;
-  }
-}
-
-@media (max-width: 420px) {
-  .wishlist-page {
-    padding-right: 18px;
-    padding-left: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 14px;
   }
 
-  .wishlist-header h1 {
-    font-size: 38px;
+  .poster {
+    border-radius: 6px;
+  }
+
+  .wishlist-btn {
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    font-size: 17px;
+  }
+
+  .movie-info {
+    padding-top: 11px;
+  }
+
+  .movie-info h3 {
+    margin-bottom: 7px;
+    font-size: 13px;
+  }
+
+  .movie-meta {
+    font-size: 10px;
   }
 
   .wishlist-empty {
     min-height: 320px;
-    padding: 45px 18px;
+    padding: 50px 20px;
+  }
+
+  .wishlist-empty h2 {
+    font-size: 27px;
+  }
+
+  .wishlist-empty p {
+    font-size: 12.5px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .wishlist-page {
+    padding: 55px 18px 65px;
+  }
+
+  .wishlist-header {
+    margin-bottom: 32px;
+  }
+
+  .wishlist-header h1 {
+    font-size: 37px;
+  }
+
+  .wishlist-header p {
+    font-size: 12px;
+  }
+
+  .wishlist-grid {
+    gap: 28px 12px;
+  }
+
+  .movie-info h3 {
+    font-size: 12.5px;
+  }
+
+  .movie-meta {
+    font-size: 9.5px;
+  }
+
+  .wishlist-empty {
+    min-height: 300px;
+    padding: 45px 16px;
+    border-radius: 8px;
+  }
+
+  .wishlist-empty-icon {
+    font-size: 38px;
+  }
+
+  .wishlist-empty h2 {
+    font-size: 25px;
+  }
+
+  .wishlist-empty p {
+    max-width: 300px;
+    line-height: 1.6;
+  }
+
+  .browse-btn {
+    padding: 11px 18px;
+  }
+}
+
+/* Extra-small mobile */
+@media (max-width: 380px) {
+  .wishlist-page {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .wishlist-header h1 {
+    font-size: 33px;
+  }
+
+  .wishlist-grid {
+    gap: 25px 10px;
+  }
+
+  .wishlist-btn {
+    top: 7px;
+    right: 7px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .movie-info h3 {
+    font-size: 12px;
+  }
+
+  .wishlist-empty {
+    padding-right: 14px;
+    padding-left: 14px;
   }
 }
